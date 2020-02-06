@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CFILE -o c
+gcc 4.8.4 -E $CFILE -o c
