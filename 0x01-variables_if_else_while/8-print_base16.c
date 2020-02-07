@@ -9,19 +9,7 @@
 int main(void)
 
 {
-	int num = 48;
-
-	int newline = 10;
-
-	for (num = 48; num <= 57; num++)
-
-	{
-		putchar(num);
-
-	}
-
-	putchar(newline);
-
+	
 	return (0);
 
 }
