@@ -20,10 +20,19 @@ int main(void)
 	for (num = 48; num <= 57; num++)
 
 	{
-		putchar(num);
-		putchar(com);
-		putchar(space);
 
+		if (num == 57)
+		{
+			putchar(num);
+
+		}
+
+		else
+		{
+			putchar(num);
+			putchar(com);
+			putchar(space);
+		}
 	}
 
 	putchar(newline);
@@ -31,4 +40,3 @@ int main(void)
 	return (0);
 
 }
-
