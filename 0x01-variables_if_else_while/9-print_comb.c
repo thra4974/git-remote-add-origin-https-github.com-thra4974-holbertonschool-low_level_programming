@@ -20,16 +20,22 @@ int main(void)
 	{
 
 		if (num == 57)
+
 		{
+
 			putchar(num);
 
 		}
 
 		else
+
 		{
 			putchar(num);
+
 			putchar(com);
+
 			putchar(space);
+
 		}
 	}
 
