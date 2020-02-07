@@ -13,8 +13,6 @@ int main(void)
 
 	int com = 44;
 
-	int newline = 10;
-
 	int space = 32;
 
 	for (num = 48; num <= 57; num++)
@@ -34,8 +32,6 @@ int main(void)
 			putchar(space);
 		}
 	}
-
-	putchar(newline);
 
 	return (0);
 
