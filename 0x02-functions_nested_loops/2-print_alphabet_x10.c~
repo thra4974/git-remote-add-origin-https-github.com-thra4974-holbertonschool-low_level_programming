@@ -1,0 +1,26 @@
+#include "holberton.h"
+
+/**
+ * print_alphabet_x10 - code uses _print_alphabet to print the alphabet x10
+ *
+ * print_alpabet - prints alphabet in lower case
+ */
+
+void print_alphabet_x10(void)
+{
+
+	
+	void print_alphabet(void);
+ 
+	int i;
+
+	for (i = 0; i <= 10; i++)
+
+	{
+
+		print_alphabet();
+
+		_putchar('\n');
+
+	}
+}
