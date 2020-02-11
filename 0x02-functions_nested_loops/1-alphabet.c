@@ -10,14 +10,16 @@
 int main(void)
 
 {
-	char alph[27];
-	int a = '0';
+	char i;
 
-	for (a = 0; a <= z; a++)
+	for (i = 'a'; i <= 'z'; i++)
 
 	{
-		_putchar(alph);
+		_putchar(i);
 
 	}
+
+	_putchar('\n');
+
 	return (0);
 }
