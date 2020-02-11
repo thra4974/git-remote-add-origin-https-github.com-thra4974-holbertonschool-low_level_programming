@@ -6,18 +6,18 @@
  * Return: Always 0.
  */
 
+
 int main(void)
 
 {
-	char c[9] = "Holberton";
-	int a = 0;
+	char alph[27];
+	int a = '0';
 
-	for (a = 0; a < 10; a++)
+	for (a = 0; a <= z; a++)
+	
 	{
-		_putchar(c[a]);
+		_putchar(alph);
+
 	}
-
-	_putchar('\n');
 	return (0);
-
 }
