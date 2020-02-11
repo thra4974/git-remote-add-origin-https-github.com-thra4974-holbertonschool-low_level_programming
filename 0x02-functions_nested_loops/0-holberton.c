@@ -10,14 +10,14 @@ int main(void)
 
 {
 	char c[9] = "Holberton";
-	int a = 0;
 
-	for (a = 0; a < 10; a++)
+	for (int a = 0; a < 10; a++)
 	{
 		_putchar(c[a]);
 	}
 
 	_putchar('\n');
+
 	return (0);
 
 }
