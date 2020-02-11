@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet - code used _putchar to print the alphabet
  *
- * Return: Always 0.
+ *
  */
 
 
@@ -21,5 +21,4 @@ void print_alphabet(void)
 
 	_putchar('\n');
 
-	return;
 }
