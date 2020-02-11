@@ -13,20 +13,20 @@ int main(void)
 	for (int i = 0; i < 100 ; i++)
 
 	{
-		putchar ((i / 10) + '0');
+		putchar (i);
 
-		putchar ((i % 10) + '0');
-
-		if (i < 99)
+		if (i < 10)
 
 		{
-			putchar(44);
+			putchar ((i / 10) + '0');
 
-			putchar(32);
+			putchar((i % 10) + '0');
 		}
 
 	}
 
+	putchar(10);
+	
 	return (0);
 
 }
