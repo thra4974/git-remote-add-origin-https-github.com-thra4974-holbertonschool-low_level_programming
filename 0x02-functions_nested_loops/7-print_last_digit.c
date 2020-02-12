@@ -2,15 +2,16 @@
 
 /**
  * print_last_digit - check the code for Holberton School students.
- * @n: digit to me tested.
+ * @i: digit to me tested.
  * Return: last value of digit.
  */
 
-int print_last_digit(int n)
+int print_last_digit(int i)
 
 {
-	int lastdig = n % 10;
+	int lastdig = i % 10;
 
-	return (lastdig);
+	_putchar(lastdig);
 
+	return (0);
 }
