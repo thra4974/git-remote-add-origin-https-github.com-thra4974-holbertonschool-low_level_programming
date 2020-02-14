@@ -1,0 +1,22 @@
+#include "holberton.h"
+
+/**
+ * print_line - program prints a line.
+ * Return: void.
+ */
+
+void print_line(int n)
+{
+	int limit = (n+1);
+
+	for (n = 0; n < limit; n++)
+	{
+		if (n > 0)
+		{
+			_putchar('_');
+
+		}
+
+	}
+	_putchar('\n');
+}
