@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * _puts - prints a string
@@ -9,10 +8,13 @@
 
 void _puts(char *str)
 {
+	int i = 0;
 
-	char nl = '\n';
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
 
-	fwrite(str, sizeof(char), _strlen(str), stdout);
-	fwrite(&nl, sizeof(nl), 1, stdout);
-
+	}
+	_putchar('\n');
 }
