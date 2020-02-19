@@ -4,7 +4,7 @@ int main(void)
 {
 	char *str;
 
-	str = "0123456789b";
+	str = "012345678";
 	puts_half(str);
 	return (0);
 }
