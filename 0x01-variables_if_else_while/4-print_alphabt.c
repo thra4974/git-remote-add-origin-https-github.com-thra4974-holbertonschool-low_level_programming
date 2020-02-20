@@ -10,22 +10,14 @@ int main(void)
 
 {
 
-	char ch = 'a';
-
-	char newline = '\n';
-
-	for (ch = 'a'; ch <= 'z'; ch++)
-
+	for (char ch = 'a'; ch <= 'z'; ch++)
 	{
-		while ((ch < 'e') && (ch > 'q'))
+		if (ch != 'e' && ch != 'q')
 		{
-
 			putchar(ch);
 		}
-
 	}
-
-	putchar(newline);
+	putchar('\n');
 
 	return (0);
 
