@@ -1,9 +1,8 @@
-#include "holberton.h"
 #include <stdio.h>
 
 /**
  * main - program prints fizzbuzz
- * Return: integer.
+ * Return: int
  */
 
 int main(void)
@@ -30,8 +29,11 @@ int main(void)
 		else
 		{
 			printf("%d", n);
+
 		}
-		putchar(32);
+		if (n != 100)
+			putchar(32);
+
 	}
 	putchar(10);
 	return (0);
