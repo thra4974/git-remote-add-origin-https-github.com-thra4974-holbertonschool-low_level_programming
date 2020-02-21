@@ -2,14 +2,15 @@
 #include <stdio.h>
 
 /**
- *fizz_buzz: program prints fizzbuzz
+ * main - program prints fizzbuzz
+ * Return: integer.
  */
 
-int main (void)
+int main(void)
 {
 	int n;
 
-	for (n = '1'; n < '100'; n++)
+	for (n = 1; n < 100; n++)
 	{
 		if (n % 3 == 0 || n % 5 == 0)
 		{
@@ -17,18 +18,21 @@ int main (void)
 			{
 				printf("FizzBuzz");
 			}
-
-			if (n % 3 == 0)
+			else if (n % 3 == 0)
 			{
 				printf("Fizz");
 			}
-
-			else
+			else if (n % 5 == 0)
 			{
 				printf("Buzz");
 			}
-
-			printf("\n");
 		}
+		else
+		{
+			printf("%d", n);
+		}
+		putchar(32);
 	}
+	putchar(10);
+	return (0);
 }
