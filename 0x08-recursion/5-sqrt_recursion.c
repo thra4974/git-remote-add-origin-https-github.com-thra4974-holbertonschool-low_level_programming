@@ -6,6 +6,8 @@
  * Return: integer.
  */
 
+int _pow(cur,  n);
+
 int _sqrt_recursion(int n)
 {
 
@@ -14,8 +16,4 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-
-	else
-	{
-		return (x * (_sqrt_recursion(x)
 }
