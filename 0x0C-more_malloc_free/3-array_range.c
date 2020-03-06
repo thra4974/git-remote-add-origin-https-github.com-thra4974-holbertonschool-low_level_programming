@@ -17,14 +17,14 @@ int *array_range(int min, int max)
 	int i;
 	int j;
 
-	arr = malloc(len * sizeof(arr[i]));
+	arr = malloc(len * sizeof(arr[i]) + 1);
 	if (!arr)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
-		arr[i] = malloc(len * sizeof(arr[i]));
+		arr[i] = malloc(len * sizeof(arr[i]) + 1);
 		if (!arr[i])
 		{
 			while (i--)
@@ -33,9 +33,9 @@ int *array_range(int min, int max)
 			return (NULL);
 		}
 	}
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
-		for (j = 0; j < len; j++)
+		for (j = 0; j <= len; j++)
 			arr[i][j] = count++;
 		count = min;
 	}
