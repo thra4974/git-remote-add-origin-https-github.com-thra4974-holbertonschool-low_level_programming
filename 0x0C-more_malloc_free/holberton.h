@@ -11,3 +11,4 @@ int times_table(int n);
 int add(int, int);
 void print_to_98(int n);
 void *malloc_checked(unsigned int b);
+char *string_nconcat(char *s1, char *s2, unsigned int n);
