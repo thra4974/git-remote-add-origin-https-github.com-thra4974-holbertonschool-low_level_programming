@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all: sums all variable param.
+ * sum_them_all - sums all variable param.
  * @n: total number of variable arguments of type unsigned int
  * Return: integer.
  */
