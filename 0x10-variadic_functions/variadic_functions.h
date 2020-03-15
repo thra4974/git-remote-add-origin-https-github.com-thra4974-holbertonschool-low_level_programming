@@ -25,6 +25,6 @@ typedef struct print_type
 {
 	char *c;
 	void (*f)(va_list list);
-} type;
+} ptype;
 
 #endif
