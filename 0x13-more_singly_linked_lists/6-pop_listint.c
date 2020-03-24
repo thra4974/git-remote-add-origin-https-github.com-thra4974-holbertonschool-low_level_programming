@@ -8,13 +8,13 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *tmp;
+	listint_t *tmp = *head;
+	int n;
 
 	if (*head == NULL)
 		return (0);
-
-	tmp = *head;
-	tmp = tmp->next;
+	n = tmp->n;
+	*head = tmp->next;
 	free(tmp);
-	return (tmp->n);
+	return (n);
 }
