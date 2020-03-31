@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int filedesc;
 	int cl;
-	char *buf;
+	size_t len = 0;
 
 	if (filename == NULL)
 		return (-1);
@@ -19,17 +19,14 @@ int create_file(const char *filename, char *text_content)
 
 	if (filedesc == -1)
 		return (-1);
-	buf = malloc(sizeof(text_content));
-	if (buf == NULL)
-	{
-		close(filedesc);
+	if (text_content == NULL)
 		return (-1);
-	}
-	write(filedesc, buf, *text_content);
+	while (text_content[len] != '\0')
+		len++;
+	write(filedesc, text_content, len);
 	cl = close(filedesc);
 	if (cl == -1)
 		return (-1);
 	close(filedesc);
-	free(buf);
 	return (1);
 }
