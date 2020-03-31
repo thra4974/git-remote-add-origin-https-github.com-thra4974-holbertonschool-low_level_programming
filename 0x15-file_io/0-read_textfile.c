@@ -17,6 +17,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	filedesc = open(filename, O_CREAT | O_RDWR);
+	if (filedesc == '\0')
+		return (0);
 	rd = read(filedesc, buf, letters);
 	write(STDOUT_FILENO, buf, letters);
 	close(filedesc);
