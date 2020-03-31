@@ -12,6 +12,7 @@ int create_file(const char *filename, char *text_content)
 	int filedesc;
 	int cl;
 	size_t len = 0;
+	ssize_t wr;
 
 	if (filename == NULL)
 		return (-1);
@@ -23,7 +24,9 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	while (text_content[len] != '\0')
 		len++;
-	write(filedesc, text_content, len);
+	wr = write(filedesc, text_content, len);
+	if (wr == -1)
+		return (-1);
 	cl = close(filedesc);
 	if (cl == -1)
 		return (-1);
