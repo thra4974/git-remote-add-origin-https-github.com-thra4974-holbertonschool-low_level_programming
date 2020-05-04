@@ -7,6 +7,8 @@
  * Return: Character.
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcpy(__attribute__((unused))char *dest,
+	      __attribute__((unused))char *src)
 {
+	return (dest);
 }
