@@ -10,9 +10,11 @@ char *_strdup(const char *src)
 {
 	size_t len = strlen(src) + 1;
 	char *s = malloc(len);
+
 	if (s == NULL)
 		return (NULL);
-	return (char *)memcpy(s, src, len);
+
+	return ((char *)memcpy(s, src, len));
 }
 
 /**
@@ -34,7 +36,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	head->key = _strdup(key);
 	head->value = _strdup(value);
-	
+
 	insert_item(ht, head);
 	return (1);
 }
@@ -47,7 +49,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 void insert_item(hash_table_t *ht, hash_node_t *head)
 {
-	unsigned int idx = key_index(head->key, ht->size);
+	unsigned int idx = 0;
 	hash_node_t *temp = ht->array[idx];
 
 	if (ht->array[idx] != NULL)
